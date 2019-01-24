@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>タイトル</title>
+		<!--CSSファイル-->
+		<link rel="stylesheet" type="text/css" href="css/module.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" type="text/css" href="js.css">
+		<link rel="stylesheet" type="text/css" href="css/top.css" media="all">
+		<!--JSファイル-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+		<script>
+			$(function() {
+				//最初は全てのパネルを非表示に
+				$('#panel > dd').hide();
+				$('#panel > dt')
+					.click(function(e){
+					//選択したパネルを開く
+					$('+dd', this).slideToggle(500);
+				})
+			});
+		</script>
+		<script>
+			$(document).ready(function(){
+				$('.p-slider').bxSlider({
+					auto: true,
+					responsive: true,
+					speed: 1500,
+					pagerCustom: '.p-slider-pager',
+					controls: true,
+					pause: 10000,
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<div class="contents clearfix">
+				<div class="l-header-left">
+					<h1 class="l-header-lead">三省堂の教科書・教材一覧</h1> <a href=""><img class="l-title-logo" src="images/common/icn_logo.png" alt="三省堂教科書・教材"></a> </div>
+				<div class="l-header-right1">
+					<div class="l-header-right-top"> サイト内検索 </div>
+					<div class="clearfix"> <input type="search" name="search" placeholder="Googleカスタム入力"> <input class="l-glasses" type="submit" name="submit" value="検索"> </div>
+				</div>
+				<div class="l-header-right2">
+					<div> 文字の大きさ <a href=""><img src="images/common/btn_top01.png" alt="標準"></a> <a href=""><img src="images/common/btn_top02.png" alt="大"></a> <a href=""><img src="images/common/btn_top03.png" alt="お問い合わせ"></a> </div>
+					<div class="l-arrow"> <a href=""><span class="l-padding12">三省堂総合TOP</span></a> <a href=""><span class="l-padding12">よくある質問</span></a> <a href="">サイトマップ</a> </div>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li class="l-width1 toggle">
+						<a href="#"><span class="l-font-19 orange">小学校</span>の教科書一覧</a>
+						<ul>
+							<li>
+								<div class="l-mega clearfix">
+									<div class="l-mega-left">
+										<p class="l-font-19 orange">小学校の教科書・教材一覧</p>
+									</div>
+									<div class="l-mega-right clearfix">
+										<div class="l-mega-sub-contents">
+											<p class="l-mega-sub p-sub-contents-english orange">英語</p>
+											<ul class="l-mega-item clearfix">
+												<li class="l-mega-item-es">
+													<a href="#">
+														<p class="l-mega-item-image"><img src="images/top/img_primary_school_01.png" alt="小学校英語関連"></p>
+														<p class="l-mega-item-heading">小学校英語関連</p>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="l-mega-sub-contents">
+											<p class="l-mega-sub p-sub-contents-national-language orange">国語</p>
+											<ul class="l-mega-item clearfix">
+												<li class="l-mega-item-es">
+													<a href="#">
+														<p class="l-mega-item-image"><img src="images/top/img_primary_school_02.png" alt="小学校英語関連"></p>
+														<p class="l-mega-item-heading">小学校の国語</p>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="l-mega-sub-contents">
+											<p class="l-mega-sub p-sub-contents-shosha orange">書写</p>
+											<ul class="l-mega-item clearfix">
+												<li class="l-mega-item-es">
+													<a href="#">
+														<p class="l-mega-item-image"><img src="images/top/img_primary_school_03.png" alt="小学校英語関連"></p>
+														<p class="l-mega-item-heading">小学生の書写</p>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<!-- l-mega-right -->
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="l-width2 toggle"><a href="#"><span class="l-font-19 green">中学校</span>の教科書一覧</a>
+						<ul>
+							<li class="l-width1 toggle">
+								<ul>
+									<li>
+										<div class="l-mega clearfix">
+											<div class="l-mega-left">
+												<p class="l-font-19 green">中学校の教科書一覧</p>
+											</div>
+											<div class="l-mega-right clearfix">
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-english-02 green">英語</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_junior_high_school_01.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-02">NEW CROWN</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-national-language-02 green">国語</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_junior_high_school_02.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-02">現代の国語</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-shosha-02 green">書写</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_junior_high_school_03.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-02">現代の書写</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- l-mega-right -->
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="l-width3 toggle"><a href="#"><span class="l-font-19 blue">高校</span>の教科書一覧</a>
+						<ul>
+							<li class="l-width1 toggle">
+								<ul>
+									<li>
+										<div class="l-mega clearfix">
+											<div class="l-mega-left">
+												<p class="l-font-19 blue">高等学校の教科書一覧</p>
+											</div>
+											<div class="l-mega-right clearfix">
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-english-03 blue">英語</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_lmega_01.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-03">高校英語関連</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-national-language-03 blue">国語</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_lmega_02.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-03">高校の国語</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+												<div class="l-mega-sub-contents">
+													<p class="l-mega-sub p-sub-contents-shosha-03 blue">書写</p>
+													<ul class="l-mega-item clearfix">
+														<li class="l-mega-item-es">
+															<a href="#">
+																<p class="l-mega-item-image"><img src="images/top/img_lmega_03.png" alt="小学校英語関連"></p>
+																<p class="l-mega-item-heading-03">高校の書写</p>
+															</a>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<!-- l-mega-right -->
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="l-width4"><a href="javascript:void(0)">はじめての方へ</a>
+					</li>
+					<li class="l-width5"><a href="javascript:void(0)">先生向け館員サイト</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!-- l-mega -->
+		<!--スライダースタート-->
+		<div class="p-visual">
+			<div class="p-visual-inner clearfix">
+				<div class="p-visual-left">
+					<ul class="p-slider">
+						<li><a href=""><img src="images/top/img_slider_01.png"></a></li>
+						<li><a href=""><img src="images/top/img_slider_02.png"></a></li>
+						<li><a href=""><img src="images/top/img_slider_03.png"></a></li>
+						<li><a href=""><img src="images/top/img_slider_04.png"></a></li>
+					</ul>
+				</div>
+				<div class="p-visual-right">
+					<ul class="p-slider-pager">
+						<li><a href=""><img src="images/top/bnr_slider_01.png"></a></li>
+						<li><a href=""><img src="images/top/bnr_slider_02.png"></a></li>
+						<li><a href=""><img src="images/top/bnr_slider_03.png"></a></li>
+						<li><a href=""><img src="images/top/bnr_slider_04.png"></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- p-visual-inner -->
+		</div>
+		<!-- p-visual -->
+		<!--スライダー終わり-->
+		<div class="contents clearfix">
+			<div class="p-left-contents clearfix">
+				<div class="p-sub-contents2 clearfix">
+					<div class="p-heading-wrap-01 clearfix">
+						<h2 class="p-heading"><span class="p-head-title">学校</span>から探す</h2>
+						<p class="p-heading-sub">ボタンをクリックすると各教科書詳細ページに移動します。</p>
+					</div>
+					<div class="p-school"> <img src="images/top/img_b_01.png" alt="小学校テキスト"> <a href="#"><img class="p-school-btn" src="images/top/btn_b_01.png" alt="教科書一覧へ"></a> </div>
+					<div class="p-school"> <img src="images/top/img_b_02.png" alt="中学校テキスト"> <a href="#"><img class="p-school-btn" src="images/top/btn_b_02.png" alt="教科書一覧へ"></a> </div>
+					<div class="p-school"> <img src="images/top/img_b_03.png"> <a href="#"><img class="p-school-btn" src="images/top/btn_b_03.png" alt="教科書一覧へ"></a> </div>
+				</div>
+				<div class="p-find-text m-notosans-medium-normal clearfix">
+					<div class="p-heading-wrap clearfix">
+						<h2 class="p-heading"><span class="p-head-title">教科書</span>から探す</h2>
+						<p class="p-heading-sub">クリックすると各教科書詳細ページに移動します。</p>
+					</div>
+					<div class="p-find-text-l clearfix">
+						<h3 class="p-sub-heading">小学校の教科書・教材</h3>
+						<ul class="p-sub-contents-wrapper clearfix">
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-english orange">英語</h4> <a href="">
+								<img src="images/top/img_primary_school_01.png" alt="">
+								<p class="p-sub-contents-description">小学校英語関連</p>
+								</a> </li>
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-national-language orange">国語</h4> <a href="">
+								<img src="images/top/img_primary_school_02.png" alt="">
+								<p class="p-sub-contents-description">小学校の国語</p>
+								</a> </li>
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-shosha orange">書写</h4> <a href="">
+								<img src="images/top/img_primary_school_03.png" alt="">
+								<p class="p-sub-contents-description">小学校の書写</p>
+								</a> </li>
+						</ul>
+					</div>
+					<div class="p-find-text-r clearfix">
+						<h3 class="p-sub-heading p-sub-heading-junior"> 中学校の教科書 </h3>
+						<ul class="p-sub-contents-wrapper clearfix">
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-english-02 green">英語</h4> <a href="">
+								<img src="images/top/img_junior_high_school_01.png" alt="">
+								<p class="p-sub-contents-description-02">小学校英語関連</p>
+								</a> </li>
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-national-language-02 green">国語</h4> <a href="">
+								<img src="images/top/img_junior_high_school_02.png" alt="">
+								<p class="p-sub-contents-description-02">小学校の国語</p>
+								</a> </li>
+							<li class="p-sub-contents">
+								<h4 class="p-sub-contents-title p-sub-contents-shosha-02 green">書写</h4> <a href="">
+								<img src="images/top/img_junior_high_school_03.png" alt="">
+								<p class="p-sub-contents-description-02">小学校の書写</p>
+								</a> </li>
+						</ul>
+					</div>
+				</div>
+				<!--p-find-text-->
+				<h3 class="p-sub-heading p-sub-heading-high"> 高等学校の教科書 </h3>
+				<div class="p-H30 m-notosans-medium-normal clearfix">
+					<p>新刊</p>
+					<h4>平成30年度改訂新刊</h4>
+				</div>
+				<div class="p-H30-contents clearfix">
+					<h4 class="p-H30-title p-H30-english blue m-notosans-medium">英語</h4>
+					<div class="p-book-list-01 clearfix">
+						<div class="p-H30-wrap clearfix">
+							<p class="m-notosans-medium">English Communication</p>
+							<p class="p-H30-mini-title">イングリッシュ コミュニケーション</p>
+							<ul class="p-H30-top-book-list clearfix">
+								<li> <a href="">
+									<img src="images/top/img_h30_english_communication_01.png" alt="">
+									<p class="m-notosans-medium">CROWN II</p>
+									<p class="p-H30-mini-title">クラウン II</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_h30_english_communication_02.png" alt="">
+									<p class="m-notosans-medium">MYWAY II</p>
+									<p class="p-H30-mini-title">マイウェイ II</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_h30_english_communication_03.png" alt="">
+									<p class="m-notosans-medium">VISTA II</p>
+									<p class="p-H30-mini-title">ビスタ　II</p>
+									</a> </li>
+							</ul>
+						</div>
+						<!--p-H30-wrap-->
+						<div class="p-H30-wrap clearfix">
+							<p class="m-notosans-medium">English Expression</p>
+							<p class="p-H30-mini-title">イングリッシュ エクスプレッション</p>
+							<ul class="p-H30-top-book-list clearfix">
+								<li> <a href=""><img src="images/top/img_h30_english_expression_01.png" alt="">
+									<p class="m-notosans-medium">CROWN II</p>
+									<p class="p-H30-mini-title">クラウン II</p>
+									</a> </li>
+								<li> <a href=""><img src="images/top/img_h30_english_expression_02.png" alt="">
+									<p class="m-notosans-medium">MYWAY II</p>
+									<p class="p-H30-mini-title">マイウェイ II</p>
+									</a> </li>
+							</ul>
+						</div>
+						<!--p-H30-wrap-->
+					</div>
+					<!--p-book-list-01-->
+					<h4 class="p-H30-title p-H30-national-language blue m-notosans-medium">国語</h4>
+					<div class="p-book-list-02 clearfix">
+						<div class="p-H30-wrap clearfix">
+							<p class="m-notosans-medium">English Communication</p>
+							<p class="p-H30-mini-title">イングリッシュ コミュニケーション</p>
+							<ul class="p-H30-top-book-list clearfix">
+								<li> <a href="">
+									<img src="images/top/img_modern_statement_01.png" alt="">
+									<p class="m-notosans-medium">高等学校</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_modern_statement_02.png" alt="">
+									<p class="m-notosans-medium">精選</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_modern_statement_03.png" alt="">
+									<p class="m-notosans-medium">明解</p>
+									</a> </li>
+							</ul>
+						</div>
+						<!--p-H30-wrap-->
+						<div class="p-H30-wrap clearfix">
+							<p class="m-notosans-medium">English Expression</p>
+							<p class="p-H30-mini-title">イングリッシュ エクスプレッション</p>
+							<ul class="p-H30-top-book-list clearfix">
+								<li> <a href=""><img src="images/top/img_classic_01.png" alt="">
+									<p class="m-notosans-medium">高等学校古文編</p>
+									</a> </li>
+								<li> <a href=""><img src="images/top/img_classic_02.png" alt="">
+									<p class="m-notosans-medium">漢文編</p>
+									</a> </li>
+								<li> <a href=""><img src="images/top/img_classic_03.png" alt="">
+									<p class="m-notosans-medium">精選</p>
+									</a> </li>
+							</ul>
+						</div>
+						<!--p-H30-wrap-->
+					</div>
+					<!--p-book-list-02-->
+				</div>
+				<!--p-H30-contents-->
+				<div class="p-H29-used-text clearfix">
+					<h4 class="p-H29-title m-notosans-medium">平成29年度使用教科書</h4>
+					<p><span>H29 改訂</span>がついた教科書は平成29年度に改訂された教科書です。</p>
+				</div>
+				<h4 class="p-H30-title p-H30-english blue m-notosans-medium">英語</h4>
+				<div class="clearfix">
+					<div class="p-H30-wrap-02 p-book-list-03 p-book-list-margin clearfix">
+						<p class="m-notosans-medium">CROWN English Communication</p>
+						<p class="p-H30-mini-title">クラウン イングリッシュ コミュニケーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href="">
+								<img src="images/top/img_crown_english_communication_01.png" alt="">
+								<p class="p-middle-text p-position-bottom m-notosans-medium">I</p>
+								</a> </li>
+							<li> <a href="">
+								<img src="images/top/img_crown_english_communication_02.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">II</p>
+								</a> </li>
+							<li> <a href="">
+								<img src="images/top/img_crown_english_communication_03.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">III</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">MYWAY English Communication</p>
+						<p class="p-H30-mini-title">マイウェイ イングリッシュ コミュニケーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href=""><img src="images/top/img_myway_english_communication_01.png" alt="">
+								<p class="p-middle-text m-notosans-medium">I</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_myway_english_communication_02.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">II</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_myway_english_communication_03.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">III</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+				</div>
+				<div class="p-H30-margin-top clearfix">
+					<div class="p-H30-wrap-02 p-book-list-03 p-book-list-margin-02 clearfix">
+						<p class="m-notosans-medium">VISTA English Communication</p>
+						<p class="p-H30-mini-title">ビスタ イングリッシュ コミュニケーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href="">
+								<img src="images/top/img_vista_english_communication_01.png" alt="">
+								<p class="p-middle-text p-position-bottom m-notosans-medium">I</p>
+								</a> </li>
+							<li> <a href="">
+								<img src="images/top/img_vista_english_communication_02.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">II</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">MYWAY English Communication</p>
+						<p class="p-H30-mini-title">マイウェイ イングリッシュ コミュニケーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href=""><img src="images/top/img_crown_english_expression_01.png" alt="">
+								<p class="p-middle-text m-notosans-medium">I</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_crown_english_expression_02.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">II</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">MYWAY English Communication</p>
+						<p class="p-H30-mini-title">マイウェイ イングリッシュ コミュニケーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href=""><img src="images/top/img_myway_english_expression_01.png" alt="">
+								<p class="p-middle-text m-notosans-medium">I</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_myway_english_expression_02.png" alt="">
+								<p class="p-middle-text p-margin-top m-notosans-medium">II</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+				</div>
+				<!--p-H30-margin-top　ここまで整形！！-->
+				<div class="p-H30-margin-top clearfix">
+					<div class="p-H30-wrap-02 p-book-list-03 p-book-list-margin-02 clearfix">
+						<p class="m-notosans-medium">SELECT English Expression</p>
+						<p class="p-H30-mini-title">セレクト イングリッシュ エクスプレッション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href="">
+								<img src="images/top/img_select_english_expression_01.png" alt="">
+								<p class="p-middle-text p-position-bottom m-notosans-medium">I</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">SELECT English Conversation</p>
+						<p class="p-H30-mini-title">セレクト イングリッシュ コンバセーション</p>
+						<ul class="p-H30-top-book-list clearfix">
+							<li> <a href=""><img src="images/top/img_myway_english_conversation_01.png" alt="">
+								<p class="p-middle-text m-notosans-medium">I</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+				</div>
+				<h4 class="p-H30-title p-H30-margin-top p-H30-national-language blue m-notosans-medium">国語</h4>
+				<div class=" clearfix">
+					<div class="p-H30-wrap-02 p-book-list-03 p-book-list-margin-02 clearfix">
+						<div class="p-left-text-book">
+							<p class="m-notosans-medium">国語総合</p>
+							<ul class="p-H30-top-book-list p-width-change clearfix">
+								<li> <a href="">
+									<img src="images/top/img_national_langualge_01.png" alt="">
+									<img src="images/top/img_national_langualge_02.png" alt="">
+									<p class="p-position-bottom m-notosans-medium">高等学校 現代文編・古典編</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_national_langualge_03.png" alt="">
+									<p class="p-position-bottom m-notosans-medium">精選</p>
+									</a> </li>
+								<li> <a href="">
+									<img src="images/top/img_national_langualge_04.png" alt="">
+									<p class="p-position-bottom m-notosans-medium">明解</p>
+									</a> </li>
+							</ul>
+						</div>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">現代文B</p>
+						<ul class="p-H30-top-book-list p-width-change clearfix">
+							<li> <a href=""><img src="images/top/img_modern_statement_b_01.png" alt="">
+								<p class="p-margin-top m-notosans-medium">高等学校</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_modern_statement_b_02.png" alt="">
+								<p class="p-margin-top m-notosans-medium">精選</p>
+								</a> </li>
+							<li> <a href=""><img src="images/top/img_modern_statement_b_03.png" alt="">
+								<p class="p-margin-top m-notosans-medium">明解</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-H30-margin-top p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">古典B</p>
+						<ul class="p-H30-top-book-list p-width-change clearfix">
+							<li> <a href="">
+								<img src="images/top/img_classic_b_01.png" alt="">
+								<img src="images/top/img_classic_b_02.png" alt="">
+								<p class="p-position-bottom m-notosans-medium">高等学校 現代文編・古典編</p>
+								</a> </li>
+							<li> <a href="">
+								<img src="images/top/img_classic_b_03.png" alt="">
+								<p class="p-position-bottom m-notosans-medium">精選</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+					<div class="p-H30-wrap-02 p-H30-margin-top p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">現代文A</p>
+						<ul class="p-H30-top-book-list p-width-change clearfix">
+							<li> <a href=""><img src="images/top/img_modern_statement_a.png" alt="">
+								<p class="p-position-bottom m-notosans-medium">現代文A</p>
+								</a> </li>
+						</ul>
+					</div>
+					<div class="p-H30-wrap-02 p-H30-margin-top p-book-list-margin-02 p-book-list-03 clearfix">
+						<p class="m-notosans-medium">古典A</p>
+						<ul class="p-H30-top-book-list p-width-change clearfix">
+							<li> <a href=""><img src="images/top/img_classic_a.png" alt="">
+								<p class="p-position-bottom m-notosans-medium">古典A</p>
+								</a> </li>
+						</ul>
+					</div>
+					<!--p-H30-wrap-->
+				</div>
+				<!-- clearfix -->
+				<div class="p-news">
+					<div class="p-news-header clearfix">
+						<h3 class="p-news-logo">三省堂からのお知らせ</h3>
+						<p class="p-news-chiran">新着ニュース一覧はこちら</p>
+					</div>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月20日</li>
+						<li class="p-news-notice p-blue">三省堂からのお知らせ</li>
+						<li><a href="">「教科書発行のプロセスに係わる企業活動の基本方針」を掲載しました。</a></li>
+					</ul>
+				</div>
+				<div class="p-news">
+					<div class="p-news-header clearfix">
+						<h3 class="p-news-logo">新着ニュース一覧</h3>
+						<p class="p-news-chiran">新着ニュース一覧はこちら</p>
+					</div>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-orange">小学生 国語</li>
+						<li><a href="">小学4年生の国語の教科書情報を更新しました。</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-green">中学生 英語</li>
+						<li><a href="">中学生の英語の教科書情報を更新しました。</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-deep-blue">高等学校 国語</li>
+						<li><a href="">小学4年生の国語の教科書情報を更新しました。</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-deep-blue">高等学校 国語</li>
+						<li><a href="">小学4年生の国語の教科書情報を更新しました。</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-deep-blue">高等学校 国語</li>
+						<li><a href="">小学4年生の国語の教科書情報を更新しました。</a></li>
+					</ul>
+				</div>
+				<div class="p-news">
+					<div class="p-news-header clearfix">
+						<h3 class="p-news-logo">研究会情報</h3>
+						<p class="p-news-chiran">研究会情報一覧はこちら</p>
+					</div>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-purple">国語</li>
+						<li><a href="">全国研究会カレンダー研究会情報</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-yellow">英語</li>
+						<li><a href="">全国研究会カレンダー研究会情報</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-purple">国語</li>
+						<li><a href="">全国研究会カレンダー研究会情報</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-yellow">英語</li>
+						<li><a href="">全国研究会カレンダー研究会情報</a></li>
+					</ul>
+					<ul class="p-news-ul clearfix">
+						<li>2016年12月1日</li>
+						<li class="p-news-notice p-purple">国語</li>
+						<li><a href="">全国研究会カレンダー研究会情報</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- p-left-contents -->
+			<!-- サイドバースタート -->
+			<div class="l-sidebar">
+				<div class="l-outline">
+					<dl id="panel"> <dt><div class="l-big-icon l-margin8">
+						<a href=""><img class="l-icon-left" src="images/common/icn_sidebar_favorite.png" alt="星"></a>
+						教科書マイリスト
+						</div></dt>
+						<dd>
+							<div class="l-small-contents clearfix">
+								<div class="l-small-icon"> <a href=""><img src="images/common/img_mylist_01.png" alt="明解国語総合[改訂版]学習課題ノート"></a> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>明解国語総合[改訂版]学習課題ノート</p>
+									</a>
+								</div>
+							</div>
+							<div class="l-small-contents l-small-contents2 clearfix">
+								<div class="l-small-icon"> <a href=""><img src="images/common/img_mylist_02.png" alt="高等学校 国語総合 現代文編 改訂版"></a> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>高等学校 国語総合 現代文編 改訂版</p>
+									</a>
+								</div>
+							</div>
+							<div class="l-small-contents l-small-contents2 clearfix">
+								<div class="l-small-icon"> <img src="images/common/img_mylist_03.png" alt="高等学校 国語総合 古典編 改訂版"> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>高等学校 国語総合 古典編 改訂版</p>
+									</a>
+								</div>
+							</div>
+						</dd>
+					</dl>
+					<dl id="panel"> <dt>
+						<div class="l-big-icon">
+							<a href=""><img class="l-icon-left" src="images/common/icn_sidebar_timer.png" alt="最近見た教科書"></a>
+							最近見た教科書
+						</div>
+						</dt>
+						<dd>
+							<div class="l-small-contents clearfix">
+								<div class="l-small-icon"> <a href=""><img src="images/common/img_textbook_01.png" alt="MY WAY English Communication I"></a> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>MY WAY English Communication I</p>
+									</a>
+								</div>
+							</div>
+							<div class="l-small-contents l-small-contents2 clearfix">
+								<div class="l-small-icon"> <a href=""><img src="images/common/img_textbook_02.png" alt="MY WAY English Expression I"></a> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>MY WAY English Expression I</p>
+									</a>
+								</div>
+							</div>
+							<div class="l-small-contents l-small-contents2 clearfix">
+								<div class="l-small-icon"> <a href=""><img src="images/common/img_textbook_03.png" alt="VISTA English Communication I"></a> </div>
+								<div class="l-small-sentence">
+									<a>
+										<p>VISTA English Communication I</p>
+									</a>
+								</div>
+							</div>
+						</dd>
+					</dl>
+				</div>
+				<!-- l-outline -->
+				<div class="l-outline">
+					<div class="l-blue-bar"> </div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_01.png" alt="訂正・変更のお知らせ"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">訂正・変更のお知らせ</p>
+							</a>
+						</div>
+					</div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_02.png" alt="研究会情報"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">研究会情報</p>
+							</a>
+						</div>
+					</div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_03.png" alt="デジタル研究所"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">デジタル研究所</p>
+							</a>
+						</div>
+					</div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_04.png" alt="拡大教科書"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">拡大教科書</p>
+							</a>
+						</div>
+					</div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_05.png" alt="ユニバーサルデザインへの取り組み"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">ユニバーサルデザインへの取り組み</p>
+							</a>
+						</div>
+					</div>
+					<div class="l-small-contents clearfix">
+						<div class="l-sidebar-menu"> <a href=""><img src="images/common/icn_l_sidebar_menu_06.png" alt="教科書販売について"></a> </div>
+						<div>
+							<a href="">
+								<p class="l-padding10">教科書販売について</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- l-outline -->
+				<div class="l-last-contents"> <a href=""><img src="images/common/bnr_sidebar_01.png" alt="平成28年度版中学校教科書アンケート"></a> <a href=""><img src="images/common/bnr_sidebar_02.png" alt="三省堂WebShop"></a> <a href=""><img src="images/common/bnr_sidebar_03.png" alt="三省堂の学習参考書"></a> <a href=""><img src="images/common/bnr_sidebar_04.png" alt="教育関連書籍・辞書"></a> <a href=""><img src="images/common/bnr_sidebar_05.png" alt="三省堂のデジタルコンテンツ"></a> </div>
+			</div>
+			<!-- l-sidebar -->
+		</div>
+		<!-- contents -->
+		<!-- サイドバー終わり -->
+		<!-- フッタースタート -->
+		<footer class="l-footer">
+			<div class="l-footer-inner">
+				<div class="clearfix">
+					<div class="l-footer-left">
+						<p class="l-big-title m-notosans-medium-normal">三省堂の教科書・教材</p>
+						<div class="clearfix l-mt25">
+							<div class="l-footer-left-nav orange">
+								<p class="l-textbook-orange m-notosans-medium-normal">小学校教科書</p>
+							</div>
+							<ul class="l-footer-link l-arrow-orange">
+								<li><a href="">英語教科書・教材</a></li>
+								<li><a href="">国語教科書</a></li>
+								<li><a href="">書写教科書</a></li>
+							</ul>
+						</div>
+						<div class="clearfix l-mt25">
+							<div class="l-footer-left-nav green">
+								<p class="l-textbook-green m-notosans-medium-normal">中学校教科書</p>
+							</div>
+							<ul class="l-footer-link l-arrow-green">
+								<li><a href="">英語教科書・教材</a></li>
+								<li><a href="">国語教科書</a></li>
+								<li><a href="">書写教科書</a></li>
+							</ul>
+						</div>
+						<div class="clearfix l-mt25">
+							<div class="l-footer-left-nav blue">
+								<p class="l-textbook-blue m-notosans-medium-normal">高等学校教科書</p>
+							</div>
+							<ul class="l-footer-link l-arrow-blue">
+								<li><a href="">英語教科書・教材</a></li>
+								<li><a href="">国語教科書</a></li>
+								<li><a href="">書写教科書</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="l-footer-right clearfix">
+						<div class="l-lists l-footer-right">
+							<p class="l-footer-mini-title m-notosans-medium-normal">その他</p>
+							<ul>
+								<li><a href="">はじめての方へ</a></li>
+								<li><a href="">Webコラム</a></li>
+								<li><a href="">研究会情報</a></li>
+								<li><a href="">拡大教科書</a></li>
+								<li><a href="">デジタル教科書</a></li>
+								<li><a href="">お問い合わせ</a></li>
+								<li><a href="">三省堂プラス</a></li>
+							</ul>
+						</div>
+						<div class="l-new_lists">
+							<div class="l-lists l-flont-lists">
+								<p class="l-footer-mini-title m-notosans-medium-normal">ニュース一覧</p>
+								<ul>
+									<li><a href="">小学校ニュース一覧</a></li>
+									<li><a href="">中学校ニュース一覧</a></li>
+									<li><a href="">高等学校ニュース一覧</a></li>
+								</ul>
+							</div>
+							<div class="l-lists">
+								<p class="l-footer-mini-title m-notosans-medium-normal">よくある質問一覧</p>
+								<ul>
+									<li><a href="">小学校のよくある質問</a></li>
+									<li><a href="">中学校のよくある質問</a></li>
+									<li><a href="">高等学校のよくある質問</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--clear-fix -->
+			</div>
+			<!--l-footer-inner -->
+			<div class="l-footer-intro clearfix">
+				<div class="l-footer-inner">
+					<div class="l-footer-intro-left"> <img src="images/common/icn_footer-logo.png" alt="三省堂フッターロゴ"> </div>
+					<div class="l-footer-intro-right">
+						<ul>
+							<li class="m-notosans-medium-normal">三省堂の刊行物</li>
+							<li><a href="">辞書</a></li>
+							<li><a href="">教科書</a></li>
+							<li><a href="">参考書</a></li>
+							<li><a href="">デジタルコンテンツ</a></li>
+							<li><a href="">六法・法律書</a></li>
+							<li><a href="">一般書</a></li>
+							<li><a href="">教材</a></li>
+							<li><a href="">オンラインサービス</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="l-footer-intro clearfix l-outro">
+				<div class="l-footer-inner">
+					<div class="l-footer-last">
+						<ul>
+							<li class="l-footer-last1"><a href="">教科書協会</a></li>
+							<li class="l-footer-last2"><a href="">全国教科書供給協会</a></li>
+							<li class="l-footer-last2"><a href="">教科書著作権協会</a></li>
+							<li class="l-footer-last2"><a href="">CoNETS(コネッツ)</a></li>
+						</ul>
+					</div>
+					<div class="l-footer-intro-right"> © 2003-2017 Sanseido Co.,Ltd. </div>
+				</div>
+			</div>
+		</footer>
+		<!-- フッター終わり -->
+	</body>
+</html>
