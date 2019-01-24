@@ -1,0 +1,338 @@
+@charset "UTF-8";
+
+.m-notosans-medium {
+	font-family: 'Noto Sans Japanese' !important;
+	font-weight: 500 !important;
+    font-size: 15px;
+    padding-top: 6px;
+}
+
+.m-notosans-medium-normal {
+	font-family: 'Noto Sans Japanese' !important;
+	font-weight: 500 !important;
+}
+
+.hiragino {
+    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+/*General Elements
+---------------------------------------------------------------------------- */
+html { font-size: 62.5%; }
+body{
+	font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.5;
+	-webkit-text-size-adjust: 100%;
+	color:#333;
+}
+a{
+	text-decoration:underline;
+	color: #2c6cd6;
+	outline: none;
+}
+a:hover{ text-decoration: none; }
+*{ box-sizing: border-box; }
+
+/*l-header
+---------------------------------------------------------------------------- */
+
+.header-right-top{
+    background-image: url(../images/common/icn_sidebar_magnifying%20_glass.png);
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.arrow a:before{
+    content: url(../images/common/icn_common.png);
+    padding-right: 5px;
+}
+
+/* l-sidebar
+---------------------------------------------------------------------------- */
+
+.l-sidebar{
+    float: right;
+    width: 270px;
+}
+
+.l-outline{
+    border-radius: 10px;
+    width: 270px;
+    padding: 20px;
+	margin-top: 44px;
+    margin-bottom: 25px;
+    border: 1px solid gray;
+}
+
+.l-big-icon{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #3e96bc;
+    box-shadow:0px 0px 8px 1px #ccc inset;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.l-margin8{
+    margin-bottom: 8px;
+}
+
+.l-icon-left{
+    position: relative;
+    bottom: 5px;
+}
+
+.l-small-contents{
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+}
+
+.l-small-icon{
+    float: left;
+    padding: 8px;
+}
+
+.l-small-sentence{
+    float: right;
+    width: 150px;
+    padding-top: 22px;
+    padding-right: 13px;
+}
+
+.l-small-contents2{
+    margin-top: 5px;
+}
+
+.l-blue-bar{
+    background-color: blue;
+    width: 100%;
+    border-radius: 2px;
+    height: 7px;
+}
+
+.l-sidebar-menu{
+    float: left;
+}
+
+.l-padding10{
+    padding-top: 10px;
+}
+
+.l-last-contents{
+    width: 300px;
+}
+
+.l-last-contents img{
+    padding-bottom: 12px;
+}
+
+/* l-footer
+---------------------------------------------------------------------------- */
+
+.l-footer{
+    padding-top: 56px;
+    margin-top: 56px;
+    border-top: solid 3px #c2dde9;
+}
+
+.l-footer-inner{
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.l-footer-left{
+    float: left;
+    border-right: 1px solid #c8c8c8;
+}
+
+.l-big-title{
+    font-size: 26.25px;
+    font-family: 'ShinGoPr5';
+    font-weight: 500;
+    color: #2186b2;
+}
+
+.l-footer-left li{
+    padding-top: 5px;
+}
+
+.l-footer-left-nav{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.l-footer-right{
+    
+    padding-left: 50px;
+    float: left;
+}
+
+.orange{
+    color: #dd6e15;
+}
+
+.green{
+    color: #549523;
+}
+
+.blue{
+    color: #516baa;
+}
+
+
+.l-mt25{
+    float: left;
+    margin-right: 40px;
+}
+
+.l-new_lists{
+    float: left;
+    margin-bottom: 55px;
+    margin-left: 50px;
+}
+
+.l-float-right{
+    float: right;
+    margin-left: 35px;
+}
+
+.l-flont-lists{
+    padding-bottom: 20px;
+}
+
+.l-lists li{
+    padding-top: 7px;
+}
+
+.l-footer-intro{
+    padding: 11px 0;
+    background-color: #f2f2f2;
+}
+
+.l-footer-intro-left{
+    float: left;
+}
+
+.l-footer-intro-right{
+    float: right;
+}
+
+.l-footer-intro-right li {
+    float: left;
+}
+
+.l-footer-intro-right a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.l-outro{
+    color: white;
+    background-color: #2186b2;
+}
+
+/*footer追加分終わり
+---------------------------------------------------------------------------- */	
+
+.l-footer a{
+	text-decoration: none;
+}
+
+.l-footer a:hover{
+    text-decoration: underline;
+}
+
+.l-footer-link li:before{
+  padding-right: 5px;
+}
+
+.l-textbook-orange:before{
+  content: url(../images/common/icn_footer_01.png);
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+.l-textbook-green:before{
+  content: url(../images/common/icn_footer_02.png);
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+.l-textbook-blue:before{
+  content: url(../images/common/icn_footer_03.png);
+  position: relative;
+  top: 5px;
+  padding-right: 5px;
+}
+
+.l-arrow-orange li:before{
+  content:url(../images/common/icn_list_school_01.png);
+}
+
+.l-arrow-green li:before{
+  content:url(../images/common/icn_list_school_02.png);
+}
+
+.l-arrow-blue li:before{
+  content:url(../images/common/icn_list_school_03.png);
+}
+
+.l-footer-right li:before{
+  content: url(../images/common/icn_common.png);
+  padding-right: 5px;
+}
+
+.l-footer-mini-title{
+  color: #2186b2;
+  font-weight: 900;
+  padding-left: 15px;
+  position: relative;
+}
+
+.l-footer-mini-title:before{
+  display: block;
+  content: "";
+  height: 3px;
+  width: 8px;
+  background-color: #2186b2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.l-footer-last li{
+    float: left;
+}
+
+.l-footer-border{
+    margin-right: 200px;
+    color: red;
+}
+
+.l-footer-last li+li{
+    border-left: solid 1px white;
+}
+
+.l-footer-last1 a{
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.l-footer-last2 a{
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+    height: auto;
+    margin: 0 20px;
+}
